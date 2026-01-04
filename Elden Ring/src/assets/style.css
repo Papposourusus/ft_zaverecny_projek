@@ -26,14 +26,13 @@
 }
 
 body {
-    background: var(--bg-dark) url("../img/bc_ohre.jpg") no-repeat center center fixed;
+    background: var(--bg-dark) url("/img/bc_ohre.jpg") no-repeat center center fixed;
     background-size: cover;
     color: var(--text-main);
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
     padding-top: 80px;
 }
-
 
 h2 {
     text-align: center;
@@ -45,7 +44,6 @@ h2 {
 section {
     padding: 80px 10%;
 }
-
 
 /*FADE-IN EFFECT */
 .fade-in {
@@ -59,25 +57,22 @@ section {
     transform: translateY(0);
 }
 
-
-
 /*obrazky sekcii */
 .section-bg-1 {
-    background: url("../img/ohre") center/cover fixed no-repeat;
+    background: url("/img/ohre") center/cover fixed no-repeat;
 }
 
 .section-bg-2 {
-    background: url("../img/ohre.jpg") center/cover fixed no-repeat;
+    background: url("/img/ohre.jpg") center/cover fixed no-repeat;
 }
 
 .section-bg-3 {
-    background: url("../img/wp.jpeg") center/cover fixed no-repeat;
+    background: url("/img/wp.jpeg") center/cover fixed no-repeat;
 }
 
 .section-bg-4 {
-    background: url("../img/foto.jpeg") center/cover fixed no-repeat;
+    background: url("/img/foto.jpeg") center/cover fixed no-repeat;
 }
-
 
 section {
     position: relative;
@@ -95,7 +90,6 @@ section > * {
     position: relative;
     z-index: 1;
 }
-
 
 /* ===========================
    NAVBAR
@@ -151,7 +145,6 @@ section > * {
     backdrop-filter: blur(6px);
 }
 
-
 /* HAMBURGER MENU */
 .hamburger {
     display: none;
@@ -190,19 +183,17 @@ section > * {
     }
 }
 
-
 /* ===========================
    HERO
 =========================== */
 .hero {
     height: 100vh;
-    background-image: url("../img/ER.jpg");
+    background-image: url("/img/ER.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
-
 
 .hero-overlay {
     position: absolute;
@@ -230,8 +221,6 @@ section > * {
     color: var(--text-secondary);
 }
 
-
-
 .features {
     padding: 60px 20px;
     text-align: center;
@@ -248,12 +237,9 @@ section > * {
     line-height: 1.8;
 }
 
-
-
 /* ===========================
-   O HRE 
+   O HRE
 =========================== */
-
 .about {
     text-align: center;
 }
@@ -297,7 +283,6 @@ section > * {
     font-size: 0.95rem;
 }
 
-/* Placeholder ikonky – môžeš nahradiť obrázkom */
 .icon {
     width: 60px;
     height: 60px;
@@ -306,7 +291,6 @@ section > * {
     border-radius: 50%;
     opacity: 0.85;
 }
-
 
 /* ===========================
    BUTTONS
@@ -330,13 +314,13 @@ section > * {
 /* ===========================
    PREVIEW GRIDY
 =========================== */
-    .boss-grid,
-    .gallery-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-        margin-top: 30px;
-    }
+.boss-grid,
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
 
 .boss-card,
 .gallery-item  {
@@ -345,7 +329,6 @@ section > * {
     background-repeat: no-repeat;
     border-radius: 12px;
 }
-
 
 .boss-card:hover,
 .weapon-card:hover,
@@ -366,31 +349,22 @@ section > * {
     grid-template-columns: repeat(3, 1fr);
     flex-direction: column;
     gap: 40px;
-    
 }
-
-
 
 /* ===========================
    BOSSOVIA
 =========================== */
-.boss1
-{
+.boss1 {
     background-position: 60% 80%;
 }
 
-.boss2
-{
+.boss2 {
     background-position: 80% 10%;
 }
 
-.boss3
-{
+.boss3 {
     background-position: center;
 }
-
-
-
 
 /* ===========================
    GALÉRIA
@@ -454,8 +428,6 @@ section > * {
     margin-bottom: 20px;
 }
 
-
-
 /* FAQ / Akordeón */
 .faq {
     padding: 60px 20px;
@@ -498,11 +470,9 @@ section > * {
     display: block;
 }
 
-
 /* ===========================
    FOOTER
 =========================== */
-
 .footer {
     background: #0d0d0d;
     padding: 40px 20px;
@@ -565,7 +535,6 @@ section > * {
     }
 }
 
-
 /* ===========================
    RESPONSIVITA
 =========================== */
@@ -591,9 +560,6 @@ section > * {
         font-size: 2.2rem;
     }
 }
-
-
-
 
 .thankyou {
     text-align: center;
