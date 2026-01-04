@@ -59,7 +59,7 @@ section {
 
 /*obrazky sekcii */
 .section-bg-1 {
-    background: url("/img/ohre") center/cover fixed no-repeat;
+    background: url("/img/ohre.jpg") center/cover fixed no-repeat;
 }
 
 .section-bg-2 {
