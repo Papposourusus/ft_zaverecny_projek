@@ -1,9 +1,16 @@
 <template>
   <div>
-    <h1>Lore</h1>
+    <Navbar />
+    <LoreComponent />
   </div>
 </template>
 
 <script>
-export default { name: "LoreView" }
+import Navbar from '@/components/AppNavbar.vue'
+import LoreComponent from '@/components/LoreC.vue'
+
+export default {
+  name: "LoreView",
+  components: { Navbar, LoreComponent }
+}
 </script>
