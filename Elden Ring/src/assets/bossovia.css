@@ -1,0 +1,95 @@
+/* ===========================
+   GLOBAL
+=========================== */
+body {
+    margin: 0;
+    background: #0A0A0C;
+    color: #E6E6E6;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between; /* logo vľavo, menu vpravo */
+    align-items: center;
+    background: rgba(10, 10, 12, 0.6);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px; /* menšie medzery, aby sa zmestilo */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #E6E6E6;
+    text-decoration: none;
+    font-size: 0.95rem;
+    white-space: nowrap; /* zabráni lámaniu textu */
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: #D4B06A;
+}
+
+/* ===========================
+   HERO
+=========================== */
+.boss-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* cinematicke scrolovanie */
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px;
+    color: white;
+}
+
+.boss-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0.1));
+    z-index: 0;
+}
+
+.boss-info {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.boss-info h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #D4B06A;
+    text-shadow: 0 0 20px rgba(255, 40, 40, 0.4);
+}
+
+.boss-info p {
+    font-size: 1.2rem;
+    color: #ddd;
+}
+
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #151518;
+    color: #B8B8B8;
+}
