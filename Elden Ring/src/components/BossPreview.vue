@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .preview-bossovia {
   text-align: center;
   padding: 80px 5%;

@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .features {
   padding: 80px 5%;
   text-align: center;

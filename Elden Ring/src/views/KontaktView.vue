@@ -1,9 +1,16 @@
 <template>
   <div>
-    <h1>Kontakt</h1>
+    <Navbar />
+    <KontaktComponent />
   </div>
 </template>
 
 <script>
-export default { name: "KontaktView" }
+import Navbar from '@/components/AppNavbar.vue'
+import KontaktComponent from '@/components/KontaktC.vue'
+
+export default {
+  name: "KontaktView",
+  components: { Navbar, KontaktComponent }
+}
 </script>

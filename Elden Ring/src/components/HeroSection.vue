@@ -13,7 +13,7 @@
 export default { name: "HeroSection" }
 </script>
 
-<style scoped>
+<style>
 .hero {
   height: 100vh;
   width: 100%;

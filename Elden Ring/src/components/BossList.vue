@@ -46,7 +46,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .boss-section {
   height: 100vh;
   background-size: cover;
