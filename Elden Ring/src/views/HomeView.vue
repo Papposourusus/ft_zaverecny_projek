@@ -22,7 +22,7 @@ import BossPreview from '../components/BossPreview.vue'
 import WeaponPreview from '../components/WeaponPreview.vue'
 import GallerySection from '../components/GallerySection.vue'
 import GalleryModal from '../components/GalleryModal.vue'
-import ContactCTA from '../components/ContactCTA.vue'
+import ContactCTA from '../components/Contact.vue'
 import AppFooter from '../components/AppFooter.vue'
 
 export default {
