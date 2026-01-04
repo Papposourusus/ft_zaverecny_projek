@@ -1,3 +1,4 @@
+
 <template>
   <div class="home">
     <AppNavbar />
@@ -11,6 +12,9 @@
     <ContactCTA />
     <AppFooter />
   </div>
+
+
+
 </template>
 
 <script>
@@ -41,3 +45,5 @@ export default {
   }
 }
 </script>
+
+
