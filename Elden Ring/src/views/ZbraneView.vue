@@ -1,9 +1,14 @@
 <template>
-  <div>
-    <h1>Bossovia</h1>
-  </div>
+  <Navbar />
+  <ZbraneComponent />
 </template>
 
 <script>
-export default { name: "BossoviaView" }
+import Navbar from '@/components/AppNavbar.vue'
+import ZbraneComponent from '@/components/WeaponC.vue'
+
+export default {
+  name: "ZbraneView",
+  components: { Navbar, ZbraneComponent }
+}
 </script>

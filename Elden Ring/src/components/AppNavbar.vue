@@ -6,7 +6,6 @@
             <li><router-link to="/">Domov</router-link></li>
             <li><router-link to="/bossovia">Bossovia</router-link></li>
             <li><router-link to="/zbrane">Zbrane</router-link></li>
-            <li><a href="#galeria">Galéria</a></li>
             <li><router-link to="/lore">Lore</router-link></li>
             <li><router-link to="/kontakt">Kontakt</router-link></li>
         </ul>
