@@ -1,8 +1,5 @@
 <template>
-  <section
-    class="hero"
-    :style="{ backgroundImage: 'url(/img/ER.jpg)' }"
-  >
+  <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
       <h1>Elden Ring – The Lands Between</h1>
@@ -15,3 +12,46 @@
 <script>
 export default { name: "HeroSection" }
 </script>
+
+<style scoped>
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/img/ER.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #E6E6E6;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  color: #DCC18A;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #B8B8B8;
+}
+</style>
