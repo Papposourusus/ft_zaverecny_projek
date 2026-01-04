@@ -1,9 +1,17 @@
 <template>
-  <div>
-    <h1>Bossovia</h1>
-  </div>
+  <Navbar />
+  <BossoviaComponent />
 </template>
 
 <script>
-export default { name: "BossoviaView" }
+import Navbar from '@/components/AppNavbar.vue'
+import BossoviaComponent from '@/components/BossList.vue'
+
+export default {
+  name: "BossoviaView",
+  components: {
+    Navbar,
+    BossoviaComponent
+  }
+}
 </script>
