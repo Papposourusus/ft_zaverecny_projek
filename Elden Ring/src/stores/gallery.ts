@@ -2,12 +2,12 @@ import { defineStore } from 'pinia'
 
 export const useGalleryStore = defineStore('gallery', {
   state: () => ({
-    selectedImage: null,
-    isModalOpen: false
+    selectedImage: null as string | null,
+    isModalOpen: false as boolean
   }),
 
   actions: {
-    openModal(image) {
+    openModal(image: string) {
       this.selectedImage = image
       this.isModalOpen = true
     },
