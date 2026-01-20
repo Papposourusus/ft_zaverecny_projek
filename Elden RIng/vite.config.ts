@@ -5,7 +5,9 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import { fileURLToPath, URL } from 'node:url'
 
 export default defineConfig({
-  base: '/ft_zaverecny_projek/',
+  base: process.env.NODE_ENV === 'production'
+    ? '/ft_zaverecny_projek/'
+    : '/',
 
   plugins: [
     vue(),
