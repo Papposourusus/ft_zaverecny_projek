@@ -3,9 +3,20 @@
     <h2>Bossovia</h2>
 
     <div class="boss-grid">
-      <div class="boss-card boss1" style="background-image: url(var(--base-url)img/boss1.jpg)"></div>
-      <div class="boss-card boss2" style="background-image: url(var(--base-url)img/boss2.jpg)"></div>
-      <div class="boss-card boss3" style="background-image: url(var(--base-url)img/boss3.jpg)"></div>
+      <div
+        class="boss-card boss1"
+        :style="{ backgroundImage: `url(${baseUrl}img/boss1.jpg)` }"
+      ></div>
+
+      <div
+        class="boss-card boss2"
+        :style="{ backgroundImage: `url(${baseUrl}img/boss2.jpg)` }"
+      ></div>
+
+      <div
+        class="boss-card boss3"
+        :style="{ backgroundImage: `url(${baseUrl}img/boss3.jpg)` }"
+      ></div>
     </div>
 
     <router-link to="/bossovia" class="btn">View all bosses</router-link>
@@ -14,7 +25,12 @@
 
 <script>
 export default {
-  name: "BossPreview"
+  name: "BossPreview",
+  computed: {
+    baseUrl() {
+      return import.meta.env.BASE_URL
+    }
+  }
 }
 </script>
 

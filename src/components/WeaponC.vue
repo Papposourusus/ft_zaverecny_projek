@@ -120,7 +120,7 @@ export default {
 <style>
 .weapons-hero {
     height: 45vh;
-    background: url(var(--base-url)img/weapons-bg.jpg) center/cover no-repeat;
+    background: url(var(--base-url) img/weapons-bg.jpg) center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
