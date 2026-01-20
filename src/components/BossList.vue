@@ -2,7 +2,7 @@
   <div class="bossovia-page">
 
     <!-- SEKCIA 1 -->
-    <section class="boss-section" style="background-image: url('/img/boss1.jpg')">
+    <section class="boss-section" style="background-image: url(var(--base-url)img/boss1.jpg)">
       <div class="boss-overlay"></div>
       <div class="boss-info">
         <h1>Godfrey, First Elden Lord</h1>
@@ -14,7 +14,7 @@
     </section>
 
     <!-- SEKCIA 2 -->
-    <section class="boss-section" style="background-image: url('/img/boss2.jpg')">
+    <section class="boss-section" style="background-image: url(var(--base-url)img/boss2.jpg)">
       <div class="boss-overlay"></div>
       <div class="boss-info">
         <h1>Malenia, Blade of Miquella</h1>
@@ -26,7 +26,7 @@
     </section>
 
     <!-- SEKCIA 3 -->
-    <section class="boss-section" style="background-image: url('/img/boss3.jpg')">
+    <section class="boss-section" style="background-image: url(var(--base-url)img/boss3.jpg)">
       <div class="boss-overlay"></div>
       <div class="boss-info">
         <h1>Margit, The Fell Omen</h1>
@@ -42,7 +42,7 @@
 
 <script>
 export default {
-  name: "BossList "
+  name: "BossList"
 }
 </script>
 

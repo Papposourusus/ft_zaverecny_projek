@@ -27,7 +27,8 @@
             Niektoré sú vyryté do kostí a zeme samotnej.“
           </p>
 
-          <img src="/img/logo.png" alt="Lore ilustrácia" class="lore-image">
+          <!-- OPRAVENÉ -->
+          <img :src="baseUrl + 'img/logo.png'" alt="Lore ilustrácia" class="lore-image">
         </div>
 
         <!-- RIGHT PAGE -->
@@ -81,17 +82,20 @@
 
 <script>
 export default {
-  name: "LoreComponent"
+  name: "LoreComponent",
+  computed: {
+    baseUrl() {
+      return import.meta.env.BASE_URL
+    }
+  }
 }
 </script>
 
 <style>
-/* ===========================
-   HERO
-=========================== */
+/* HERO */
 .lore-hero {
     height: 40vh;
-    background: url("/img/lore-bg.jpg") center/cover no-repeat;
+    background: url(var(--base-url)img/lore-bg.jpg) center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,19 +128,15 @@ export default {
     font-size: 1.2rem;
 }
 
-/* ===========================
-   BOOK WRAPPER
-=========================== */
+/* BOOK WRAPPER */
 .lore-book-wrapper {
     display: flex;
     justify-content: center;
     padding: 80px 0;
-    background: url("/img/dark-texture.jpg") center/cover fixed;
+    background: url(var(--base-url)img/dark-texture.jpg) center/cover fixed;
 }
 
-/* ===========================
-   BOOK
-=========================== */
+/* BOOK */
 .lore-book {
     width: 80%;
     max-width: 1200px;
@@ -158,15 +158,13 @@ export default {
     transform: translateX(-50%);
 }
 
-/* ===========================
-   PAGES
-=========================== */
+/* PAGES */
 .lore-page {
     width: 50%;
     padding: 50px 40px;
     font-family: "Georgia", serif;
     color: #3a2f1b;
-    background: url("/img/pergament.jpg") center/cover;
+    background: url(var(--base-url)img/pergament.jpg) center/cover;
     position: relative;
 }
 
@@ -179,58 +177,13 @@ export default {
     pointer-events: none;
 }
 
-/* ===========================
-   LEFT PAGE
-=========================== */
-.left-page h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #5a4525;
-}
-
-.lore-intro {
-    font-size: 1.1rem;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-.lore-small {
-    font-style: italic;
-    font-size: 0.95rem;
-    opacity: 0.8;
-}
-
+/* LEFT PAGE */
 .lore-ornament {
     width: 100%;
     height: 40px;
-    background: url("/img/runes.png") center/contain no-repeat;
+    background: url(var(--base-url)img/runes.png) center/contain no-repeat;
     margin: 25px 0;
     opacity: 0.6;
-}
-
-/* ===========================
-   RIGHT PAGE
-=========================== */
-.lore-section {
-    margin-bottom: 40px;
-}
-
-.lore-section h3 {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-    color: #5a4525;
-}
-
-.lore-section p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 12px;
-}
-
-.lore-page:hover {
-    transform: translateY(-5px);
-    transition: 0.3s ease;
-    box-shadow: 0 0 25px rgba(0,0,0,0.25);
 }
 
 .lore-image {
@@ -240,15 +193,5 @@ export default {
     opacity: 0.9;
     filter: drop-shadow(0 0 10px rgba(0,0,0,0.4));
     border-radius: 6px;
-}
-
-/* ===========================
-   FOOTER
-=========================== */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #151518;
-    color: #B8B8B8;
 }
 </style>

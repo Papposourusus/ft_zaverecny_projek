@@ -1,3 +1,9 @@
+document.documentElement.style.setProperty(
+  '--base-url',
+  import.meta.env.BASE_URL
+);
+
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import App from './App.vue'

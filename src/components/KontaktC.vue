@@ -43,7 +43,7 @@
 
       <!-- RANNI -->
       <div class="ranni-wrapper">
-        <img src="/img/raani.jpg" alt="Ranni" class="ranni-img">
+        <img :src="baseUrl + 'img/raani.jpg'" alt="Ranni" class="ranni-img">
         <p class="ranni-quote">„I shall deliver your message…“</p>
       </div>
 
@@ -80,7 +80,12 @@
 
 <script>
 export default {
-  name: "KontaktComponent"
+  name: "KontaktComponent",
+  computed: {
+    baseUrl() {
+      return import.meta.env.BASE_URL
+    }
+  }
 }
 </script>
 
@@ -88,7 +93,7 @@ export default {
 /* HERO */
 .contact-hero {
     height: 40vh;
-    background: url("/img/contact-bg.jpg") center/cover no-repeat;
+    background: url(var(--base-url)img/contact-bg.jpg) center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -125,13 +130,13 @@ export default {
     display: flex;
     justify-content: center;
     padding: 80px 0;
-    background: url("/img/dark-texture.jpg") center/cover fixed;
+    background: url(var(--base-url)img/dark-texture.jpg) center/cover fixed;
 }
 
 .scroll {
     width: 70%;
     max-width: 900px;
-    background: url("/img/pergament.jpg") center/cover;
+    background: url(var(--base-url)img/pergament.jpg) center/cover;
     padding: 50px 60px;
     border-radius: 12px;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);
