@@ -17,7 +17,11 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHistory(
+    import.meta.env.MODE === 'production'
+      ? '/ft_zaverecny_projek/'
+      : '/'
+  ),
   routes
 })
 
