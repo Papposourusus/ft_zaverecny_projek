@@ -7,36 +7,38 @@
         <div
             class="gallery-item"
             :style="{ backgroundImage: `url(${baseUrl}img/foto1.jpeg)` }"
+            @click="gallery.openModal(`${baseUrl}img/foto1.jpeg`)"
         ></div>
 
         <div
             class="gallery-item"
             :style="{ backgroundImage: `url(${baseUrl}img/foto2.jpg)` }"
+            @click="gallery.openModal(`${baseUrl}img/foto2.jpg`)"
         ></div>
 
         <div
             class="gallery-item"
             :style="{ backgroundImage: `url(${baseUrl}img/foto3.jpeg)` }"
+            @click="gallery.openModal(`${baseUrl}img/foto3.jpeg`)"
         ></div>
 
         <div
             class="gallery-item"
             :style="{ backgroundImage: `url(${baseUrl}img/foto4.jpg)` }"
+            @click="gallery.openModal(`${baseUrl}img/foto4.jpg`)"
         ></div>
 
     </div>
 
-    <button class="btn" id="openGallery">Zobraziť viac</button>
+    <button class="btn" @click="gallery.openModal(`${baseUrl}img/foto1.jpeg`)">
+      Zobraziť viac
+    </button>
 </section>
 </template>
 
-<script>
-export default {
-  name: "GallerySection",
-  computed: {
-    baseUrl() {
-      return import.meta.env.BASE_URL
-    }
-  }
-}
+<script setup>
+import { useGalleryStore } from '@/stores/gallery'
+
+const gallery = useGalleryStore()
+const baseUrl = import.meta.env.BASE_URL
 </script>
