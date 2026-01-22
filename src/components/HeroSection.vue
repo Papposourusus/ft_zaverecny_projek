@@ -17,7 +17,7 @@ export default { name: "HeroSection" }
 .hero {
   height: 100vh;
   width: 100%;
-  background-image: url(var(--base-url)img/ER.jpg);
+  background-image: url("${var(--base-url)}/img/ER.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
