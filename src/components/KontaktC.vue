@@ -93,7 +93,7 @@ export default {
 /* HERO */
 .contact-hero {
     height: 40vh;
-    background: url(var(--base-url)img/contact-bg.jpg) center/cover no-repeat;
+    background: url("${var(--base-url)}/img/contact-bg.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,13 +130,13 @@ export default {
     display: flex;
     justify-content: center;
     padding: 80px 0;
-    background: url(var(--base-url)img/dark-texture.jpg) center/cover fixed;
+    background: url("${var(--base-url)}/img/dark-texture.jpg") center/cover fixed;
 }
 
 .scroll {
     width: 70%;
     max-width: 900px;
-    background: url(var(--base-url)img/pergament.jpg) center/cover;
+    background: url("${var(--base-url)}/img/pergament.jpg") center/cover;
     padding: 50px 60px;
     border-radius: 12px;
     box-shadow: 0 0 40px rgba(0,0,0,0.5);

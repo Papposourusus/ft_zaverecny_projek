@@ -95,7 +95,7 @@ export default {
 /* HERO */
 .lore-hero {
     height: 40vh;
-    background: url(var(--base-url)img/lore-bg.jpg) center/cover no-repeat;
+    background: url("${var(--base-url)}/img/lore-bg.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -133,7 +133,7 @@ export default {
     display: flex;
     justify-content: center;
     padding: 80px 0;
-    background: url(var(--base-url)img/dark-texture.jpg) center/cover fixed;
+    background: url("${var(--base-url)}/img/dark-texture.jpg") center/cover fixed;
 }
 
 /* BOOK */
@@ -164,7 +164,7 @@ export default {
     padding: 50px 40px;
     font-family: "Georgia", serif;
     color: #3a2f1b;
-    background: url(var(--base-url)img/pergament.jpg) center/cover;
+    background: url("${var(--base-url)}/img/pergament.jpg") center/cover;
     position: relative;
 }
 
@@ -181,7 +181,7 @@ export default {
 .lore-ornament {
     width: 100%;
     height: 40px;
-    background: url(var(--base-url)img/runes.png) center/contain no-repeat;
+background: url("${var(--base-url)}/img/runes.png") center/contain no-repeat;
     margin: 25px 0;
     opacity: 0.6;
 }

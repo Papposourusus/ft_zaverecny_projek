@@ -120,12 +120,12 @@ export default {
 <style>
 .weapons-hero {
     height: 45vh;
-    background: url(var(--base-url) img/weapons-bg.jpg) center/cover no-repeat;
+    background: url("${var(--base-url)}/img/weapons-bg.jpg") center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    textán: center;
+    text-align: center;
     position: relative;
 }
 
@@ -148,4 +148,52 @@ export default {
     margin-bottom: 15px;
     filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
 }
+
+
+.top-weapons {
+    padding: 60px 10%;
+    background: #111;
+    color: #ddd;
+    text-align: center;
+}
+
+.top-weapons h2 {
+    color: #D4B06A;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+/* TABUĽKA */
+.weapons-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(212,176,106,0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.weapons-table th {
+    background: rgba(212,176,106,0.15);
+    color: #D4B06A;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-bottom: 1px solid rgba(212,176,106,0.3);
+}
+
+.weapons-table td {
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.weapons-table tr:nth-child(even) {
+    background: rgba(255,255,255,0.03);
+}
+
+.weapons-table tr:hover {
+    background: rgba(212,176,106,0.1);
+    transition: 0.2s;
+}
+
 </style>
